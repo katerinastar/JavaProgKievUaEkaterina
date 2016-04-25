@@ -1,10 +1,11 @@
+import java.util.Scanner;
+
 public class Runner {
     public static void main(String[] args){
-        int a = 4;
-        int b = 2;
+       Scanner sc = new Scanner(System.in);
+       int number = sc.nextInt();
+       int result = Digit.findDigit(number);
 
-        int mul = Multiplicator.mul(a, b);
-
-        System.out.println(mul);
+       System.out.println(number + "->" + result);
     }
 }
